@@ -68,6 +68,9 @@ function vote(number){
 }
 
 function voteAgain() {
+	for (var i = 0; i<document.querySelectorAll(".vote-selected").length; i++){
+		document.querySelectorAll(".vote-selected")[i].classList.remove("vote-selected");
+	};
 	for(var i=0; i<document.querySelectorAll(".container").length; i++){
 		document.querySelectorAll(".container")[i].classList.toggle("visibility");
 	}
